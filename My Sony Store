@@ -1,4 +1,8 @@
+--Create a store database
+
 CREATE TABLE MySonyStore (id INTEGER, name text, model text, price INTEGER, sold INTEGER);
+
+--Displays the products by name, model, price, and how many were sold.
 
 INSERT INTO MySonyStore VALUES (1, "Sony", "A7iv", "2,400", 2);
 INSERT INTO MySonyStore VALUES (2, "Sony", "A7iii", "1,800", 5);
@@ -6,7 +10,14 @@ INSERT INTO MySonyStore VALUES (3, "Sony", "FX30", "1,800", 3);
 INSERT INTO MySonyStore VALUES (4, "Tripod", "CR1", "60", 3);
 INSERT INTO MySonyStore VALUES (5, "SSD card", "V90", "100", 2);
 
+--displayst the store by price.
 SELECT * from MySonyStore ORDER BY price;
+
+--displays the most expensive item.
 SELECT MAX(price) FROM MySonyStore;
+
+--displays the lowest price item.
 SELECT MIN(price) FROM MySonyStore;
+
+--diplays the total items sold.
 SELECT TOTAL(sold) FROM MySonyStore;

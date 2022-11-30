@@ -1,0 +1,12 @@
+CREATE TABLE MySonyStore (id INTEGER, name text, model text, price INTEGER, sold INTEGER);
+
+INSERT INTO MySonyStore VALUES (1, "Sony", "A7iv", "2,400", 2);
+INSERT INTO MySonyStore VALUES (2, "Sony", "A7iii", "1,800", 5);
+INSERT INTO MySonyStore VALUES (3, "Sony", "FX30", "1,800", 3);
+INSERT INTO MySonyStore VALUES (4, "Tripod", "CR1", "60", 3);
+INSERT INTO MySonyStore VALUES (5, "SSD card", "V90", "100", 2);
+
+SELECT * from MySonyStore ORDER BY price;
+SELECT MAX(price) FROM MySonyStore;
+SELECT MIN(price) FROM MySonyStore;
+SELECT TOTAL(sold) FROM MySonyStore;

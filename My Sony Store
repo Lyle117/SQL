@@ -20,4 +20,4 @@ SELECT MAX(price) FROM MySonyStore;
 SELECT MIN(price) FROM MySonyStore;
 
 --diplays the total items sold.
-SELECT TOTAL(sold) FROM MySonyStore;
+SELECT TOTAL(sold) FROM MySonyStore

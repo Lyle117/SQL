@@ -1,0 +1,53 @@
+CREATE TABLE FamousPeople 
+(id INTEGER PRIMARY KEY AUTOINCREMENT,
+First_name TEXT, 
+Last_name TEXT, 
+job TEXT);
+
+INSERT INTO FamousPeople VALUES
+(1,"Johnny","Depp","Actor");
+INSERT INTO FamousPeople VALUES
+(2,"Jennifer","Lawarence","Actress");
+INSERT INTO FamousPeople VALUES
+(3,"Marshall","Mathers","Rapper");
+INSERT INTO FamousPeople VALUES
+(4,"Ed","Sheeran","singer");
+INSERT INTO FamousPeople VALUES
+(5,"Ray","Lewis", "NFL player");
+INSERT INTO FamousPeople VALUES
+(6, "Troy","Palamalu","NFL player");
+
+SELECT * FROM FamousPeople;
+
+CREATE TABLE Songs_wrote (songs_wrote text);
+INSERT INTO Songs_wrote VALUES("River");
+
+CREATE TABLE NFL_players (NFL_players text);
+INSERT INTO NFL_players VALUES("Hall of Fame");
+
+CREATE TABLE Movie_Stars (Movie_Stars text);
+INSERT INTO Movie_Stars VALUES("Best Actor Award");
+
+CREATE TABLE A
+(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT); 
+INSERT INTO A VALUES (1,"Marshal");
+INSERT INTO A VALUES (2,"Ed");
+
+SELECT * FROM A
+JOIN Songs_wrote;
+
+CREATE TABLE B
+(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT);
+INSERT INTO B VALUES (1,"Ray");
+INSERT INTO B VALUES (2,"Troy");
+
+SELECT * FROM B
+JOIN NFL_players;
+
+CREATE TABLE C
+(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT); 
+INSERT INTO C VALUES (1,"Johnny");
+INSERT INTO C VALUES (2,"Jennifer");
+
+SELECT * FROM C
+JOIN Movie_Stars;

@@ -88,4 +88,4 @@ SELECT COUNT(*),
         ELSE "diet" 
     END AS "donut_diet"
 FROM winstons_donut_logs
-GROUP BY donut_diet;
+GROUP BY donut_diet

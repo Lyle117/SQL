@@ -1,0 +1,21 @@
+CREATE TABLE Destiny_Tracker
+(id INTEGER PRIMARY KEY AUTOINCREMENT,
+Player TEXT,
+Most_used_item TEXT,
+Used INTEGER,
+subclass_main TEXT);
+
+INSERT INTO Destiny_Tracker (id, Player, Most_used_item, Used, subclass_main) VALUES (1, "Doval04", "Chaparone", 2000, "Titan Sentinel");
+INSERT INTO Destiny_Tracker (id, Player, Most_used_item, Used, subclass_main) VALUES (2, "Shalloa", "Ace of Spade", 1400, "Gunslinger");
+INSERT INTO Destiny_Tracker (id, Player, Most_used_item, Used, subclass_main) VALUES (3, "Whoop", "whiterhoard", 6000, "Titan Sunbreaker");
+INSERT INTO Destiny_Tracker (id, Player, Most_used_item, Used, subclass_main) VALUES (4, "ALpha416", "Chroma Rush", 5000, "Titan Sentinel");
+INSERT INTO Destiny_Tracker (id, Player, Most_used_item, Used, subclass_main) VALUES (5, "HitmanBoss", "Trinity Ghoul", 13000, "Gunslinger");
+INSERT INTO Destiny_Tracker (id, Player, Most_used_item, Used, subclass_main) VALUES (6, "Extreme808", "Firefright", 1200, "Voidwalker");
+
+SELECT * FROM Destiny_Tracker;
+
+UPDATE Destiny_Tracker SET Used=2500 WHERE id=1;
+SELECT * FROM Destiny_Tracker;
+
+DELETE FROM Destiny_Tracker WHERE id=6;
+SELECT * FROM Destiny_Tracker;

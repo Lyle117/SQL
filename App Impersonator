@@ -18,4 +18,4 @@ UPDATE Destiny_Tracker SET Used=2500 WHERE id=1;
 SELECT * FROM Destiny_Tracker;
 
 DELETE FROM Destiny_Tracker WHERE id=6;
-SELECT * FROM Destiny_Tracker;
+SELECT * FROM Destiny_Tracker
